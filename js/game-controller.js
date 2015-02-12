@@ -15,7 +15,6 @@ function Syllables() {
                 ['ry ','ba'], // game level 1
                 ['ża','ba'], // game level 2
                 ['cię','ża','rów','ka'], // ...
-                ['pa','ra','sol'],
                 ['pa','ra','sol','ka'],
                 ['ko','ło'],
                 ['ko','a','la'],
