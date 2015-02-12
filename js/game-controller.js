@@ -42,7 +42,7 @@ function Syllables() {
                 ['pił','ka'],
                 ['wi','no','gro','na'],
                 ['kro','wa'],
-                ['po','ma','ra','ńcze'],
+                ['po','ma','rań','cze'],
                 ['ba','nan'],
                 ['ko','ro','na'],
                 ['ba','ran'],
@@ -50,11 +50,11 @@ function Syllables() {
                 ['ha','mak'],
                 ['fi','li','żan','ka'],
                 ['san','ki'],
-                ['ga','za','ta'],
+                ['ga','ze','ta'],
                 ['za','mek'],
                 ['ka','lo','ry', 'fer'],
                 ['buł','ki'],
-                ['u','my','wa','lka'],
+                ['u','my','wal','ka'],
                 ['pa','jac'],
                 ['dłu','go','pis'],
                 ['lal','ka'],
@@ -87,7 +87,21 @@ function Syllables() {
         }
 
         for (var syllable = 0; syllable < maxSyllables; syllable++) { // show syllables propositions (source containers)
-            sourceContainers[syllable].textContent = words[gameLevel][words[gameLevel].length - 1 - syllable];
+
+            if ((words[gameLevel].length <= 2) || (words[gameLevel].length > 4)) { // words with 2 or 5+ syllables
+                sourceContainers[syllable].textContent = words[gameLevel][words[gameLevel].length - 1 - syllable];
+            }
+            else if (words[gameLevel].length == 3) { // words with 3 syllables
+                sourceContainers[0].textContent = words[gameLevel][0];
+                sourceContainers[1].textContent = words[gameLevel][2];
+                sourceContainers[2].textContent = words[gameLevel][1];
+            }
+            else if (words[gameLevel].length == 4) { // words with 3 syllables
+                sourceContainers[0].textContent = words[gameLevel][3];
+                sourceContainers[1].textContent = words[gameLevel][1];
+                sourceContainers[2].textContent = words[gameLevel][0];
+                sourceContainers[3].textContent = words[gameLevel][2];
+            }
 
             if (sourceContainers[syllable].textContent == 'undefined') {
                 sourceContainers[syllable].textContent = '';
