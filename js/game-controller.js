@@ -88,6 +88,10 @@ function Syllables() {
 
         for (var syllable = 0; syllable < maxSyllables; syllable++) { // show syllables propositions (source containers)
             sourceContainers[syllable].textContent = words[gameLevel][words[gameLevel].length - 1 - syllable];
+
+            if (sourceContainers[syllable].textContent == 'undefined') {
+                sourceContainers[syllable].textContent = '';
+            }
         }
         gameLevel += 1;
     }
