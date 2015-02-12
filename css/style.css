@@ -1,0 +1,237 @@
+/* ---------------------------------------- */
+        /* GENERAL DOCUMENT STYLING */
+/* ---------------------------------------- */
+
+body {
+	background: rgb(96,88,136);
+	background: rgba(96,88,136,.8);
+	color: #000;
+	font-size: 62.5%;
+	margin: 0 auto;
+	min-width: 20em;
+	max-width: 140em;
+	position: relative;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::-moz-selection {
+	background: rgb(65,58,89);
+	color: #FFF;
+}
+
+::selection  {
+	background: rgb(65,58,89);
+	color: color: #FFF;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+/* ---------------------------------------- */
+          /* MAIN CONTENT STYLING */
+/* ---------------------------------------- */
+
+.b-app {
+	color: #FFF;
+	font-family: 'Capriola', sans-serif;
+	font-size: 1.5em;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom: 2em;
+	width: 47em;
+}
+
+
+.b-app__header {
+	background: rgb(65,58,89);
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	letter-spacing: 5px;
+	padding: .3em;
+	text-align: center;
+	-moz-text-shadow: 0 0 2px #FFF;
+	-ms-text-shadow: 0 0 2px #FFF;
+	-o-text-shadow: 0 0 2px #FFF;
+	-webkit-text-shadow: 0 0 2px #FFF;
+	text-shadow: 0 0 2px #FFF;
+	text-transform: uppercase;
+}
+
+.b-app__containers-wrapper {
+	margin: 1.5em auto;
+	width: 45em;
+}
+
+.b-app__containers-wrapper--source-elements {
+	width: 26.3em;
+}
+
+.b-app__container {
+	border: solid 1px rgb(65,58,89);
+	border-radius: 4px;
+	font-size: 3.4em;
+	margin: 5px;
+	padding-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+
+.b-app__container:hover {
+	cursor: grabbing;
+}
+
+.b-app__container--source {
+	background: rgb(65,58,89);
+	display: inline-block;
+	font-size: 2.1em;
+	height: 65px;
+	-moz-text-shadow: 0 0 1px #FFF;
+	-ms-text-shadow: 0 0 1px #FFF;
+	-o-text-shadow: 0 0 1px #FFF;
+	-webkit-text-shadow: 0 0 1px #FFF;
+	text-shadow: 0 0 1px #FFF;
+	-moz-transform: rotate(-6deg);
+	-ms-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
+	-webkit-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+	width: 118px;
+}
+
+.b-app__container--source:hover {
+	background: rgb(96,88,136);
+	background: rgba(96,88,136,.6);
+	-moz-box-shadow: 2px 2px 3px rgb(96,88,136);
+	-ms-box-shadow: 2px 2px 3px rgb(96,88,136);
+	-o-box-shadow: 2px 2px 3px rgb(96,88,136);
+	-webkit-box-shadow: 2px 2px 3px rgb(96,88,136);
+	box-shadow: 2px 2px 3px rgb(96,88,136);
+}
+
+.b-app__container--target {
+	background: rgb(96,88,136);
+	background: rgba(96,88,136,.6);
+	-moz-border-radius: 40px;
+	-ms-border-radius: 40px;
+	-o-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	-moz-box-shadow: 0 0 4px rgb(96,88,136);
+	-ms-box-shadow: 0 0 4px rgb(96,88,136);
+	-o-box-shadow: 0 0 4px rgb(96,88,136);
+	-webkit-box-shadow: 0 0 4px rgb(96,88,136);
+	box-shadow: 0 0 4px rgb(96,88,136);
+	display: none;
+	height: 80px;
+	-moz-text-shadow: 0 0 3px #FFF;
+	-ms-text-shadow: 0 0 3px #FFF;
+	-o-text-shadow: 0 0 3px #FFF;
+	-webkit-text-shadow: 0 0 3px #FFF;
+	text-shadow: 0 0 3px #FFF;
+	width: 155px;  
+}
+
+.b-app__container--target:hover {
+	background: rgb(65,58,89);
+}
+
+.b-app__button {
+	background: rgb(65,58,89);
+	border: solid 1px rgb(65,58,89);
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: inset 0 0 1px #FFF, inset 0 5px 10px rgba(96,88,136,.8);
+	-ms-box-shadow: inset 0 0 1px #FFF, inset 0 5px 10px rgba(96,88,136,.8);
+	-o-box-shadow: inset 0 0 1px #FFF, inset 0 5px 10px rgba(96,88,136,.8);
+	-webkit-box-shadow: inset 0 0 1px #FFF, inset 0 5px 10px rgba(96,88,136,.8);
+	box-shadow: inset 0 0 1px #FFF, inset 0 5px 10px rgba(96,88,136,.8);
+	display: block;
+	font-size: .8em;
+	height: 40px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	-moz-transition: background .4s ease-out;
+	-ms-transition: background .4s ease-out;
+	-o-transition: background .4s ease-out;
+	-webkit-transition: background .4s ease-out;
+	transition: background .4s ease-out;
+	width: 160px;
+}
+
+.b-app__button:hover {
+	-moz-box-shadow: 0 0 4px rgb(96,88,136), inset 0 0 1px #FFF;
+	-ms-box-shadow: 0 0 4px rgb(96,88,136), inset 0 0 1px #FFF;
+	-o-box-shadow: 0 0 4px rgb(96,88,136), inset 0 0 1px #FFF;
+	-webkit-box-shadow: 0 0 4px rgb(96,88,136), inset 0 0 1px #FFF;
+	box-shadow: 0 0 4px rgb(96,88,136), inset 0 0 1px #FFF;
+	-moz-transition: background .4s ease-out;
+	-ms-transition: background .4s ease-out;
+	-o-transition: background .4s ease-out;
+	-webkit-transition: background .4s ease-out;
+	transition: background .4s ease-out;
+}
+
+.b-app__desc {
+	background: rgb(96,88,136);
+	background: rgba(96,88,136,.5);
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: .8em;
+	letter-spacing: 1px;
+	margin: 1em auto;
+	padding: .4em;
+	width: 95%;
+}
+
+.b-app__modal {
+	background: #FF717E;
+	border: solid 5px #FFF;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 20px;
+	-moz-box-shadow: 0 0 30px #FFF;
+	-ms-box-shadow: 0 0 30px #FFF;
+	-o-box-shadow: 0 0 30px #FFF;
+	-webkit-box-shadow: 0 0 30px #FFF;
+	box-shadow: 0 0 30px #FFF;
+	color: #FFF;
+	font-size: 4em;
+	height: 200px;
+	left: 50%;
+	line-height: 70px;
+	margin-left: -175px;
+	margin-top: -100px;
+	position: fixed;
+	text-align: center;
+	-moz-text-shadow: 0 0 2px #FFF;
+	-ms-text-shadow: 0 0 2px #FFF;
+	-o-text-shadow: 0 0 2px #FFF;
+	-webkit-text-shadow: 0 0 2px #FFF;
+	text-shadow: 0 0 2px #FFF;
+	top: 50%;
+	width: 350px;
+}

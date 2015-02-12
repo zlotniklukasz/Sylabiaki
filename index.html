@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='pl'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta http-equiv="X-UA-Compatible" content='IE=edge' />
+		<title>Sylabiaki - gra logopedyczna dla dzieci</title>
+		<meta name='description' content='Sylabiaki - gra logopedyczna dla dzieci' />
+		<meta name='keywords' content='gra, logopedyczna, dzieci, sylaby, układanie' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<!--[if lt IE 9]>
+		<script src='//html5shim.googlecode.com/svn/trunk/html5.js'></script>
+		<![endif]-->
+		<link href='http://fonts.googleapis.com/css?family=Capriola&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='css/normalize.css' rel='stylesheet' />
+		<link href='css/style.css' rel='stylesheet' />
+	</head>
+	<body>
+
+		<article id='drag-and-drop' class='b-app'>
+			<h1 class='b-app__header'>Sy-la-bia-ki</h1>
+
+			<input id='next' class='b-app__button' type='submit' value='Następny sylabiak' />
+
+			<p class='b-app__desc'>Z dostępnych sylab utwórz wyraz:</p>
+			<div class='b-app__containers-wrapper'>
+				<div id='ct1' class='b-app__container b-app__container--target' draggable='true'></div>
+				<div id='ct2' class='b-app__container b-app__container--target' draggable='true'></div>
+				<div id='ct3' class='b-app__container b-app__container--target' draggable='true'></div>
+				<div id='ct4' class='b-app__container b-app__container--target' draggable='true'></div>
+			</div>
+
+			<p class='b-app__desc'>Aby przenieść wybraną sylabę, przeciągnij ją myszką:</p>
+			<div class='b-app__containers-wrapper b-app__containers-wrapper--source-elements'>
+				<div id='cs1' class='b-app__container b-app__container--source' draggable='true'></div>
+				<div id='cs2' class='b-app__container b-app__container--source' draggable='true'></div>
+				<div id='cs3' class='b-app__container b-app__container--source' draggable='true'></div>
+				<div id='cs4' class='b-app__container b-app__container--source' draggable='true'></div>
+				<div class='b-app__container b-app__container--source'></div>
+				<div class='b-app__container b-app__container--source'></div>
+			</div>
+
+			<div class='b-app__modal'>
+				<p>Brawo!</p>
+			</div>
+
+        </article>
+
+    <script src='js/gameContent.js'></script>
+    <script src='js/dd.js'></script>
+	</body>
+</html>
