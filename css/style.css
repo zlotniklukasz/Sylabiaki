@@ -84,7 +84,7 @@ a:link, a:visited {
 .b-app__container {
 	border: solid 1px rgb(65,58,89);
 	border-radius: 4px;
-	font-size: 3.4em;
+	font-size: 3.1em;
 	margin: 5px;
 	padding-top: 10px;
 	text-align: center;
@@ -126,17 +126,21 @@ a:link, a:visited {
 
 .b-app__container--target {
 	background: rgb(96,88,136);
-	background: rgba(96,88,136,.6);
+	-moz-background: linear-gradient(rgba(96,88,136,.2), rgb(96,88,136)); 
+	-ms-background: linear-gradient(rgba(96,88,136,.2),rgb(96,88,136)); 
+	-o-background: linear-gradient(rgba(96,88,136,.2), rgb(96,88,136)); 
+	-webkit-background: linear-gradient(rgba(96,88,136,.2), rgb(96,88,136)); 
+	background: linear-gradient(rgba(96,88,136,.2), rgb(96,88,136));    
 	-moz-border-radius: 40px;
 	-ms-border-radius: 40px;
 	-o-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
-	-moz-box-shadow: 0 0 4px rgb(96,88,136);
-	-ms-box-shadow: 0 0 4px rgb(96,88,136);
-	-o-box-shadow: 0 0 4px rgb(96,88,136);
-	-webkit-box-shadow: 0 0 4px rgb(96,88,136);
-	box-shadow: 0 0 4px rgb(96,88,136);
+	-moz-box-shadow: 2px 2px 4px rgb(96,88,136);
+	-ms-box-shadow: 2px 2px 4px rgb(96,88,136);
+	-o-box-shadow: 2px 2px 4px rgb(96,88,136);
+	-webkit-box-shadow: 2px 2px 4px rgb(96,88,136);
+	box-shadow: 2px 2px 4px rgb(96,88,136);
 	display: none;
 	height: 80px;
 	-moz-text-shadow: 0 0 3px #FFF;
@@ -148,7 +152,7 @@ a:link, a:visited {
 }
 
 .b-app__container--target:hover {
-	background: rgb(65,58,89);
+	background: rgb(96,88,136);  
 }
 
 .b-app__button {
@@ -220,10 +224,10 @@ a:link, a:visited {
 	box-shadow: 0 0 30px #FFF;
 	color: #FFF;
 	display: none;
-	font-size: 4em;
+	font-size: 3.2em;
 	height: 200px;
 	left: 50%;
-	line-height: 70px;
+	line-height: 85px;
 	margin-left: -175px;
 	margin-top: -100px;
 	position: fixed;
