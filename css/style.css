@@ -168,6 +168,7 @@ a:link, a:visited {
 	-o-box-shadow: inset 0 0 1px #FFF, inset 0 5px 10px rgba(96,88,136,.8);
 	-webkit-box-shadow: inset 0 0 1px #FFF, inset 0 5px 10px rgba(96,88,136,.8);
 	box-shadow: inset 0 0 1px #FFF, inset 0 5px 10px rgba(96,88,136,.8);
+	color: #222;
 	display: block;
 	font-size: .8em;
 	height: 40px;
@@ -210,7 +211,13 @@ a:link, a:visited {
 }
 
 .b-app__modal {
-	background: #FF717E;
+	background:
+	radial-gradient(#000 15%, transparent 16%) 0 0,
+	radial-gradient(#000 15%, transparent 16%) 8px 8px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+	background-color:rgb(65,58,89);
+	background-size:16px 16px;
 	border: solid 5px #FFF;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -224,10 +231,10 @@ a:link, a:visited {
 	box-shadow: 0 0 30px #FFF;
 	color: #FFF;
 	display: none;
-	font-size: 3.2em;
+	font-size: 2.3em;
 	height: 200px;
 	left: 50%;
-	line-height: 85px;
+	line-height: 120px;
 	margin-left: -175px;
 	margin-top: -100px;
 	position: fixed;
@@ -236,7 +243,8 @@ a:link, a:visited {
 	-ms-text-shadow: 0 0 2px #FFF;
 	-o-text-shadow: 0 0 2px #FFF;
 	-webkit-text-shadow: 0 0 2px #FFF;
-	text-shadow: 0 0 2px #FFF;
+	text-shadow: 0 0 3px #FFF;
+	text-transform: uppercase;
 	top: 50%;
 	width: 350px;
 }

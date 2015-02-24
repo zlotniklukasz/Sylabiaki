@@ -71,7 +71,9 @@ function Syllables() {
 
     function newGame() {
 
-        modal.style.display = 'none'; // hide alert window
+        modal.style.display = 'none'; // hide modal window
+        nextGameButton.style.color = '#222'; // disable button
+        nextGameButton.disabled = true; // disable button
 
         if (gameLevel == words.length) { // when all words used, start the game from the beggining
             gameLevel = 0;
@@ -122,6 +124,8 @@ function Syllables() {
                 (targetContainers[3].textContent == words[gameLevel - 1][3] || words[gameLevel - 1][3] == undefined)) {
                 
                 modal.style.display = 'block'; // show modal window
+                nextGameButton.style.color = '#FFF'; // enable button
+                nextGameButton.disabled = false; // enable button
             }
         dragendEventTriggered = false;
         }

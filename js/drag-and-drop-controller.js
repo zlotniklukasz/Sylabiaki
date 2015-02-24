@@ -1,7 +1,7 @@
 (function() { // Multiple Drag & Drop with autofilling
 /* This script should work for any HTML element, which: 
 - has attribute 'draggable='true'
-- has attribute 'id' with unique content
+- has valid attribute 'id'
 - its only content is text 
 - parent element has ID = 'drag-and-drop' */
     'use strict';
