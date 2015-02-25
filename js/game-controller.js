@@ -72,7 +72,7 @@ function Syllables() {
     function newGame() {
 
         modal.style.display = 'none'; // hide modal window
-        nextGameButton.style.color = '#222'; // disable button
+        nextGameButton.style.color = '#111'; // disable button
         nextGameButton.disabled = true; // disable button
 
         if (gameLevel == words.length) { // when all words used, start the game from the beggining
